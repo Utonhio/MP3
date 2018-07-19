@@ -1,0 +1,52 @@
+// http://ionicframework.com/docs/theming/
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+
+    .fondoimg{
+        background-image: url("../assets/imgs/mainBackground.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+
+    }
+    .fondoimg2{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        background-image: url("../assets/imgs/bg2.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .fondoimg3{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        background-image: url("../assets/imgs/bg1.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 411px) {
+    /*.fondoimg{
+        background-image: url("../assets/imgs/fondoCel.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: relative;
+        width:411px;
+        height:100%;
+    }*/
+}
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.

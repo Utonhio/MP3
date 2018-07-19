@@ -1,0 +1,76 @@
+<ion-content class="fondoimg">
+    <div class="loginContent">
+        <div  align= center class="loginImg">
+            <ion-img height="80" width="80" src="../../assets/imgs/logo.jpg" alt="LOGO M+P"></ion-img>
+            <h1>Un lugar donde podrás construir tus sueños.</h1>
+        </div>
+        <div class="loginRedes">
+            <form>    
+            <ion-grid class="loginRedesAcomodo">
+                <ion-col>
+                    <ion-row> 
+                        <ion-label  class="Label1">Registrarse</ion-label>
+                    </ion-row>
+                    <ion-row>
+                        <ion-label stacked class="Label1">Contraseña</ion-label>
+                    </ion-row>
+                    <ion-row>
+                            <input [(ngModel)]="user.passwordregistro" name="password" id="password" type="password" placeholder="Contraseña" class="logInput" required>
+                    </ion-row>
+                    <ion-row>
+                            <ion-label stacked class="Label1">Confirmar contraseña</ion-label>
+                    </ion-row>
+                    <ion-row>
+                            <input [(ngModel)]="user.passwordverificar" name="password" id="password2" type="password" placeholder="Contraseña" class="logInput" required>
+                    </ion-row>
+                    <ion-row>
+                            <ion-label stacked class="Label1">Correo electronico</ion-label>
+                    </ion-row>
+                    <ion-row>
+                        <input [(ngModel)]="user.emailregistro" name="email" type="text" placeholder="Correo electrónico" autocapitalize="off" class="logInput" required>
+                    </ion-row>
+                    <ion-row>
+                        <p>Al hacer clic en "Registrarse", indicas que has leído y aceptado las Condiciones del servicio y la Política de privacidad de MP.</p>
+                        <div padding>
+                            <ion-row>
+                                <button ion-button type="submit" class="cancelButton"(click)="cancel()">Cancelar</button>
+                                <button ion-button type="submit" class="sessionButton" (click)="signin()" block>Registrarse</button>
+                            </ion-row>
+                        </div>
+                    </ion-row>
+                </ion-col>
+            </ion-grid>
+            </form>
+        </div>
+        <form>    
+            <div class="loginSesion">
+                <ion-grid class="loginAcomodo">
+                    <ion-col>
+                        <ion-row>
+                            <ion-label stacked class="Label1">Iniciar sesión</ion-label>
+                        </ion-row>   
+                        <ion-row >
+                            <input [(ngModel)]="user.email" name="email" type="text" placeholder="Correo electrónico" autocapitalize="off" class="logInput" required>
+                        </ion-row>
+                        <ion-row>
+                            <br>
+                        </ion-row>
+                        <ion-row >
+                            <input [(ngModel)]="user.password" name="password" type="password" placeholder="Contraseña" class="logInput" required>
+                        </ion-row>
+                        <ion-row>
+                            <button (click)="goToResetPassword()" class="olvidado">¿Has olvidado la contraseña?</button>
+                        </ion-row>
+                        <ion-row>
+                            <button ion-button type="submit"  class="sessionButton">Iniciar sesion</button>
+                        </ion-row>
+                    </ion-col>
+                </ion-grid>
+            </div>
+        </form>
+        <div class="loginAbout">
+               <p><a (click)="inicio()" id="aAbout">Sobre</a> <a (click)="inicio()" id="aAbout">Privacidad</a> ©MartinezPrado 2018.</p>
+        </div>
+    </div>
+    
+</ion-content>
